@@ -1,0 +1,12 @@
+@media (max-width: 750px) {
+    
+   
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 14px;
+        font-family: 'Karla', sans-serif;
+    }
+    
+}
