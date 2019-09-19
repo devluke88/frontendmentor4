@@ -54,3 +54,68 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-column: 1fr;
+  grid-gap: 50px;
+}
+
+/* NAVABAR */
+.menu {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 8fr 2fr;
+  align-items: center;
+}
+
+.menu__list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 80px);
+  justify-items: space-between;
+}
+
+.menu__list li {
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+  display: grid;
+  justify-content: end;
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+}
+
+/* Wrapper*/
+.container {
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  grid-row-gap: 20px;
+}
+
+.container>* {
+  border: 1px solid red;
+}
+
+.box-image {
+  width: 100%;
+}
+
+.reverse-order {
+  order: 1;
+}
+
+
