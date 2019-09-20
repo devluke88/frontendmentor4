@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,7 +19,9 @@
 
 <!--Navbar Section-->
 <nav class="menu">
-  <a href="#" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo"></a>
+  <div class="menu__logo">
+    <a href="#" class="logo-link"><img src="images/logo.svg" alt="logo" class="logo"></a>
+  </div>
   <ul class="menu__list">
     <li><a href="#" class="menu-link">Features</a></li>
     <li><a href="#" class="menu-link">Team</a></li>
@@ -32,15 +34,22 @@
   <div class="container">
     <img src="images/illustration-1.svg" alt="logo" class="box-image reverse-order">
     <div class="box">
-      <h1 class="box__heading">All your files in one secure location, accessible anywhere.</h1>
+      <h2 class="box__heading">All your files in one secure <br>location, accessible anywhere.</h2>
       <p class="box__desc">Fylo stores your most important files in one secure location. 
       Access them wherever you need, share and collaborate with friends, 
       family, and co-workers.</p>
-      <a href="#" class="btn">Get Started</a>
+      <form action="">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email..." required></label>
+        <!-- <input type="submit" value="Get Started" class="btn blue"> -->
+        <button for="email" href="#" class="btn-cta">Get Started</button>
+      </form>
+      
     </div>
   </div>
   <!-- 2nd Container -->
-  <div class="container">
+<div class="test">
+  <div class="container main">
     <img src="images/illustration-2.svg" alt="logo" class="box-image">
     <div class="box">
       <h2 class="box__heading">Stay productive, wherever you are</h2>
@@ -58,6 +67,7 @@
       </div>
     </div>
   </div>
+</div>
   <!-- 3rd Container -->
   <div class="container">
     <div class="box">
