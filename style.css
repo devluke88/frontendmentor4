@@ -59,9 +59,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 50px;
-  display: grid;
-  grid-column: 1fr;
-  grid-gap: 200px;
+  margin-bottom: 100px;
 }
 
 /* NAVABAR */
@@ -104,18 +102,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.container>* {
-  border: 1px solid red;
 }
 
 .box-image {
   width: 100%;
 }
 
-.reverse-order {
+.hero__image {
   order: 1;
 }
 
@@ -128,6 +121,7 @@ body {
   grid-gap: 15px;
   margin-right: 30px;
 }
+
 .box__heading {
   font-size: 40px;
   font-family: 'Raleway', sans-serif;
@@ -135,7 +129,6 @@ body {
 }
 
 .box__desc {
-  padding-right: 30px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -179,8 +172,100 @@ label {
   background-color: hsl(224, 89%, 47%);
 }
 
-.test {
-  background-color: #F9F8FE;
+.spacer {
+  max-width: 1440px;
+  margin: 0 auto;
+  content: "";
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 120px;
 }
 
+.main-wrapper {
+  background-color: #F9F8FE;
+  padding: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main--container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 80px;
+}
+
+.main__image {
+  order: 1;
+}
+
+.marg {
+  padding-right: 200px;
+}
+
+.link {
+  justify-self: start;
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 350px;
+}
+
+.quote {
+  max-width: 15px;
+  max-height: 15px;
+  width: 100%;
+}
+
+.quote__desc {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.review {
+  display: flex;
+}
+
+.photo-review {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.author-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 11px;
+}
+
+.position {
+  font-size: 10px;
+}
+
+.bg-blue {
+  background-color: #575989;
+  color: #fff;
+}
+
+.box-2 {
+  grid-area: 1fr 1fr / 1fr 1fr;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+}
 
