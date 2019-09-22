@@ -1,12 +1,88 @@
-@media (max-width: 750px) {
+
+
+@media (max-width: 1250px) {
+    .box__heading {
+        font-size: 3.5rem;
+    }
+    .box__desc {
+        font-size: 1.6rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    /*HERO*/
+    .hero--container {
+        grid-template-columns: 1fr;
+      }
+
+    .hero__image {
+        order: 0;
+        padding: 2rem;
+    }
     
-   
+    .box {justify-items: stretch;
+        text-align: center;
+        margin-right: 0;
+        padding: 2rem;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+        padding-right: 0;
+        
+        /* border: 1px solid red; */
+      }
+
+
+    /*NAV*/
+    .menu__list {font-size: 1.6rem}
+      
+
+    /*MAIN*/
+    .main__image {
+    order: 0;
+    align-self: center;
+    padding: 2rem;
+    }
+
+    .main--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding-bottom: 8rem;
+    }
+
+    .main-box {
+        text-align: left;
+        justify-items: center;
+    }
+
+    .link {justify-self: center;}
+
+    .box__heading {text-align: center;}
+
+
+    /*LAST*/
+    .last--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .btn-flex {
+    align-self: stretch;
+    margin-top: 1.5rem;
+    }    
 }
 
 @media (max-width: 550px) {
-    html {
-        font-size: 14px;
-        font-family: 'Karla', sans-serif;
-    }
     
+}
+@media (max-width: 375px) {
+
 }
