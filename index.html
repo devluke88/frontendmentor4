@@ -12,7 +12,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: #fff; }
   </style>
 </head>
 <body>
@@ -30,17 +30,17 @@
   </nav>
 
   <!-- Hero Section-->
-  <div class="wrapper">
-    <div class="container">
+  <div class="wrapper hero-wrapper">
+    <div class="hero--container">
       <div class="hero__image">
           <img src="images/illustration-1.svg" alt="logo" class="box-image">
       </div>
       <div class="box">
         <h1 class="box__heading">All your files in one secure <br>location, accessible anywhere.</h1>
-        <p class="box__desc">Fylo stores your most important files in one secure location. 
+        <p class="box__desc marg-bot">Fylo stores your most important files in one secure location. 
         Access them wherever you need, share and collaborate with friends, 
         family, and co-workers.</p>
-        <form action="">
+        <form action="#" method="get">
           <label for="email">Email</label>
           <input id="email" type="email" placeholder="Enter your email..." required></label>
           <button for="email" href="#" class="btn-cta">Get Started</button>
@@ -53,12 +53,12 @@
   <div class="spacer"></div>
 
   <!-- Main Section -->
-  <div class="main-wrapper">
+  <div class="wrapper main-wrapper">
     <div class="main--container">
       <div class="main__image">
         <img src="images/illustration-2.svg" alt="logo" class="box-image">
       </div>
-      <div class="box">
+      <div class="box main-box">
         <h2 class="box__heading">Stay productive, wherever you are</h2>
         <p class="box__desc marg">Never let location be an issue when accessing your files. Fylo has you 
         covered for all of your file storage needs.</p>
@@ -83,32 +83,60 @@
 
   <!-- Last Section -->
   <div class="wrapper bg-blue">
-    <div class="container">
-        <div class="box box-2">
-          <h2 class="box__heading">Get early access today</h2>
-          <p class="box__desc">It only takes a minute to sign up and our free starter tier is extremely generous. 
-          If you have any questions, our support team would be happy to help you.</p>
-          <a href="#" class="btn-cta">Get Started For Free</a>
-        </div>
+    <div class="last--container">
+      <div class="box box-2">
+        <h2 class="box__heading">Get early access today</h2>
+        <p class="box__desc">It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <form class="last__email" action="#" method="get">
+          <label for="email">Email</label>
+          <input id="email"  name="email" type="email" placeholder="email@example.com" required></label>
+          <button for="email"  href="#" class="btn-cta btn-flex">Get Started For Free</button>
+        </form>
     </div>
   </div>
 
+  <!-- Footer Section -->
   <footer>
-        Phone: +1-543-123-4567
-        example@fylo.com
+    <div class="wrapper bg-db">
+      <div class="footer__logo">
+        <img src="images/logo-white.svg" alt="footer logo">
+      </div>
+
+      <div class="footer__box">
+        <div class="contact">
+          <span><img src="images/icon-phone.svg" alt="phone icon" class="fimg"> Phone: +1-543-123-4567</span>
+          <span><img src="images/icon-email.svg" alt="email icon" class="fimg"> example@fylo.com</span>
+        </div>
+          
+        <div class="about">
+          <a href="#" class="flinks">About Us</s>
+          <a href="#" class="flinks">Jobs</a>
+          <a href="#" class="flinks">Press</a>
+          <a href="#" class="flinks">Blog</a>
+        </div>
+        
+        <div class="other">
+          <a href="#" class="flinks">Contact Us</a>
+          <a href="#" class="flinks">Terms</a>
+          <a href="#" class="flinks">Privacy</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" class="flinks"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#" class="flinks"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" class="flinks"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
       
-        About Us
-        Jobs
-        Press
-        Blog
-      
-        Contact Us
-        Terms
-        Privacy
       <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">lukenow.com</a>.
-      </p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">lukenow.com</a>.
+        </p>
+    </div> 
   </footer>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
