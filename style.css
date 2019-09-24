@@ -58,7 +58,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 70px;
+  padding: 7rem;
 }
 
 .hero-wrapper {
@@ -79,7 +79,7 @@ body {
 .menu__list {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(3, 80px);
+  grid-template-columns: repeat(3, 8rem);
   justify-items: space-between;
 }
 
