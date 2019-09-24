@@ -1,6 +1,5 @@
-
-
 @media (max-width: 1250px) {
+    
     .box__heading {
         font-size: 3.5rem;
     }
@@ -15,7 +14,6 @@
         font-size: 1.4rem;
     }
 
-    /*HERO*/
     .hero--container {
         grid-template-columns: 1fr;
       }
@@ -35,16 +33,10 @@
         grid-template-columns: 1fr;
         grid-row-gap: 1.5rem;
         padding-right: 0;
-        
-        /* border: 1px solid red; */
-      }
+    }
 
-
-    /*NAV*/
     .menu__list {font-size: 1.6rem}
-      
 
-    /*MAIN*/
     .main__image {
     order: 0;
     align-self: center;
@@ -67,8 +59,6 @@
 
     .box__heading {text-align: center;}
 
-
-    /*LAST*/
     .last--container {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,12 +67,130 @@
     .btn-flex {
     align-self: stretch;
     margin-top: 1.5rem;
-    }    
+    }  
+    
+    .menu {
+        justify-items: space-between;
+        padding: 5rem;
+    }
+
+    .logo {
+        max-width: 12rem;
+        width: 100%;
+    }
+    .box__desc {
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 550px) {
-    
+
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 4rem;
+      }
+
+    .menu__list {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(3, 6rem);
+        justify-items: end;
+    }
+
+    .menu {
+        justify-items: space-between;
+        padding: 3rem;
+    }
+
+    .logo {
+        max-width: 10rem;
+        width: 100%;
+    }
+
+    .footer__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .contact,
+    .about,
+    .other {
+       margin-bottom: 25px;
+    }
+
+    .social-icons {
+        display: grid;
+        grid-template-columns: 20px 20px 20px;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+    .box__heading {
+        font-size: 3rem;
+    }
+
+    .box__desc {
+        font-size: 1.6rem;
+        padding-right: 0;
+    }
 }
+
 @media (max-width: 375px) {
 
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 3rem;
+    }
+
+    .menu__list {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 5rem);
+        justify-items: end;
+    }
+
+    .menu {
+        justify-items: space-between;
+        padding: 2rem;
+    }
+
+    .logo {
+        max-width: 10rem;
+        width: 100%;
+    }
+
+    .footer__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .contact,
+    .about,
+    .other {
+        margin-bottom: 25px;
+    }
+
+    .social-icons {
+        display: grid;
+        grid-template-columns: 20px 20px 20px;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+      .box__heading {
+        font-size: 2.8rem;
+    }
+
+    .box__desc {
+        font-size: 1.4rem;
+        padding-right: 0;
+    }
+
+    .menu__list {font-size: 1.3rem}
 }
